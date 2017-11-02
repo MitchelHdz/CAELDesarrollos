@@ -1,0 +1,52 @@
+{% if section == 'index' or section == 'workPlaces'%}
+
+  <nav class="neopraxis-navbar" id="neopraxisNavbar">
+{% else %}
+  <nav class="neopraxis-navbar" id="neopraxisNavbarSite">
+{% endif %}
+  <button class="hamburger hamburger--collapse" type="button" id="neopraxis-hamburger-menu">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <a class="navbar-brand" href="./">
+    <img src="./img/CaelSinFondo.png" class="fitLogo" id="fit-logo">
+  </a>
+  <ul class="nav navbar-nav navbar-right" id="neopraxis-main-navbar">
+      {% if section == 'index' %}
+        <li class="neopraxis-font-montserrat-regular active">
+      {% else %}
+        <li class="neopraxis-font-montserrat-regular uppercase">
+      {% endif%}
+        <a href="./index.html" class="">Inicio</a>
+      </li>
+      {% if section == 'services' %}
+        <li class="neopraxis-font-montserrat-regular active">
+      {% else %}
+        <li class="neopraxis-font-montserrat-regular uppercase">
+      {% endif %}
+        <a href="./aboutUs.html" class="">¿quiénes somos?</a>
+      </li>
+      {% if section == 'memberships' %}
+        <li class="neopraxis-font-montserrat-regular active">
+      {% else %}
+        <li class="neopraxis-font-montserrat-regular uppercase">
+      {% endif %}
+        <a href="./developments.html" class="">desarrollos</a>
+      </li>
+      {% if section == 'tools' %}
+        <li class="neopraxis-font-montserrat-regular active">
+      {% else %}
+        <li class="neopraxis-font-montserrat-regular uppercase">
+      {% endif %}
+        <a href="./quote.html" class="">cotiza</a>
+      </li>
+      {% if section == 'blog' %}
+        <li class="neopraxis-font-montserrat-regular active">
+      {% else %}
+        <li class="neopraxis-font-montserrat-regular uppercase">
+      {% endif %}
+        <a href="./index.html#contact" class="">contacto</a>
+      </li>
+  </ul>
+</nav>
